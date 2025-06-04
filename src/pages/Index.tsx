@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ExternalLink, Code, Heart, Users, PenTool } from 'lucide-react';
+import { ExternalLink, Code, Heart, Users, PenTool, Linkedin } from 'lucide-react';
 
 const Index = () => {
   const projects = [
@@ -35,7 +36,19 @@ const Index = () => {
       <div className="container mx-auto px-6 py-16 max-w-6xl">
         {/* Header Section with Title and Image */}
         <div className="flex items-center gap-8 mb-16">
-          <h1 className="text-4xl font-bold text-gray-800">Shanthi SSVM</h1>
+          <div className="flex-1">
+            <div className="flex items-center gap-4">
+              <h1 className="text-4xl font-bold text-gray-800">Shanthi SSVM</h1>
+              <a 
+                href="https://linkedin.com/in/your-profile" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                <Linkedin className="w-8 h-8" />
+              </a>
+            </div>
+          </div>
           <div className="flex-shrink-0">
             <img 
               src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
