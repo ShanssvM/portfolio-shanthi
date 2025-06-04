@@ -44,7 +44,7 @@ const Index = () => {
               src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
               alt="Shanthi SSVM"
               className="w-24 h-24 rounded-full object-cover border-4 border-gray-300 shadow-lg"
-              style={{ objectPosition: 'center center' }}
+              style={{ objectPosition: 'center top' }}
             />
           </div>
           <a 
