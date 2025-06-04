@@ -26,6 +26,9 @@ const Index = () => {
     },
     {
       title: "Blogger",
+        target="_blank",
+            rel="noopener noreferrer",
+            className="hover:opacity-80 transition-opacity",
       url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
       color: "text-teal-500 hover:text-teal-600"
     }
