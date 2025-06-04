@@ -37,9 +37,11 @@ const Index = () => {
         {/* Header Section with Title and Image */}
         <div className="flex items-center gap-8 mb-16">
           <h1 className="text-4xl font-bold text-gray-800">Shanthi SSVM</h1>
-          <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center border-2 border-gray-300">
-            <span className="text-gray-500 text-sm">Image</span>
-          </div>
+          <img 
+            src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
+            alt="Shanthi SSVM"
+            className="w-24 h-24 rounded-full object-cover border-2 border-gray-300 shadow-sm"
+          />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
