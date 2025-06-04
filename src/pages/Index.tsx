@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Code, Heart, Users, PenTool } from 'lucide-react';
 
@@ -37,11 +36,14 @@ const Index = () => {
         {/* Header Section with Title and Image */}
         <div className="flex items-center gap-8 mb-16">
           <h1 className="text-4xl font-bold text-gray-800">Shanthi SSVM</h1>
-          <img 
-            src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
-            alt="Shanthi SSVM"
-            className="w-32 h-32 rounded-full object-cover object-center border-2 border-gray-300 shadow-sm -mt-4"
-          />
+          <div className="flex-shrink-0">
+            <img 
+              src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
+              alt="Shanthi SSVM"
+              className="w-40 h-40 rounded-full object-cover border-4 border-gray-300 shadow-lg"
+              style={{ objectPosition: 'center top' }}
+            />
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
