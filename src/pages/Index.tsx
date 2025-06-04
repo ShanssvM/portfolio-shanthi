@@ -47,7 +47,7 @@ const Index = () => {
             />
           </div>
           <a 
-            href="https://linkedin.com/in/your-profile" 
+            href="https://www.linkedin.com/in/helloshanthissv/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-700 transition-colors"
