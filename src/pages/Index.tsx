@@ -26,9 +26,6 @@ const Index = () => {
     },
     {
       title: "Blogger",
-        target="_blank",
-            rel="noopener noreferrer",
-            className="hover:opacity-80 transition-opacity",
       url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
       color: "text-teal-500 hover:text-teal-600"
     }
@@ -123,6 +120,8 @@ const Index = () => {
                 <a
                   key={index}
                   href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`group flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
                 >
                   <div className="flex-1">
