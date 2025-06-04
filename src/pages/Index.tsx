@@ -6,27 +6,27 @@ const Index = () => {
   const projects = [
     {
       title: "NeuroBlossom - Alzheimer's Support App",
-      url: "#",
+      url: "https://memory-match-buddy.lovable.app/home",
       color: "text-orange-500 hover:text-orange-600"
     },
     {
       title: "AI-Powered Interactive Career Pathway Tool", 
-      url: "#",
+      url: "https://shanssvm.github.io/job-network-viz",
       color: "text-orange-500 hover:text-orange-600"
     },
     {
       title: "Spur Spark",
-      url: "#", 
+      url: "https://sites.google.com/view/spur-spark/home", 
       color: "text-orange-500 hover:text-orange-600"
     },
     {
       title: "Nourish Stay Fit 4 Life",
-      url: "#",
+      url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/recipes-1",
       color: "text-blue-400 hover:text-blue-500"
     },
     {
       title: "Blogger",
-      url: "#",
+      url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
       color: "text-teal-500 hover:text-teal-600"
     }
   ];
