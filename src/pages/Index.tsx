@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Code, Heart, Users, PenTool, Linkedin } from 'lucide-react';
 
@@ -37,17 +36,7 @@ const Index = () => {
         {/* Header Section with Title and Image */}
         <div className="flex items-center gap-8 mb-16">
           <div className="flex-1">
-            <div className="flex items-center gap-4">
-              <h1 className="text-4xl font-bold text-gray-800">Shanthi SSVM</h1>
-              <a 
-                href="https://linkedin.com/in/your-profile" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-700 transition-colors"
-              >
-                <Linkedin className="w-8 h-8" />
-              </a>
-            </div>
+            <h1 className="text-4xl font-bold text-gray-800">Shanthi SSVM</h1>
           </div>
           <div className="flex-shrink-0">
             <img 
@@ -57,6 +46,14 @@ const Index = () => {
               style={{ objectPosition: 'center top' }}
             />
           </div>
+          <a 
+            href="https://linkedin.com/in/your-profile" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-700 transition-colors"
+          >
+            <Linkedin className="w-8 h-8" />
+          </a>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
