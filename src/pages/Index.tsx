@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Code, Heart, Users, PenTool, Linkedin } from 'lucide-react';
+import { ExternalLink, Code, Heart, Users, PenTool } from 'lucide-react';
 
 const Index = () => {
   const projects = [
@@ -50,9 +50,13 @@ const Index = () => {
             href="https://www.linkedin.com/in/helloshanthissv/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-700 transition-colors"
+            className="hover:opacity-80 transition-opacity"
           >
-            <Linkedin className="w-8 h-8" />
+            <img 
+              src="/lovable-uploads/f27d6b5c-2df9-4583-bbca-9966ae5c253a.png" 
+              alt="LinkedIn" 
+              className="w-8 h-8"
+            />
           </a>
         </div>
 
