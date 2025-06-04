@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Code, Heart, Users, PenTool } from 'lucide-react';
 
@@ -40,7 +39,7 @@ const Index = () => {
           <img 
             src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
             alt="Shanthi SSVM"
-            className="w-24 h-24 rounded-full object-cover border-2 border-gray-300 shadow-sm"
+            className="w-32 h-32 rounded-full object-cover object-center border-2 border-gray-300 shadow-sm"
           />
         </div>
 
