@@ -55,7 +55,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/f27d6b5c-2df9-4583-bbca-9966ae5c253a.png" 
               alt="LinkedIn" 
-              className="w-8 h-8"
+              className="w-12 h-12"
             />
           </a>
         </div>
