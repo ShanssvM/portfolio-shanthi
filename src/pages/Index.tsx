@@ -34,6 +34,14 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       <div className="container mx-auto px-6 py-16 max-w-6xl">
+        {/* Header Section with Title and Image */}
+        <div className="flex items-center gap-8 mb-16">
+          <h1 className="text-4xl font-bold text-gray-800">Shanthi SSVM</h1>
+          <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center border-2 border-gray-300">
+            <span className="text-gray-500 text-sm">Image</span>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Bio Section */}
           <div className="space-y-8">
