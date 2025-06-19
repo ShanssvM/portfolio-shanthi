@@ -76,18 +76,18 @@ No journey is linear but how quickly we rise and how we keep moving forward with
 Whether it’s building apps, leading workshops, or sharing a wellness tip — I show the same curiosity and big smile to help make life a little brighter — through tech, wellness, and human connection.
 
               </p>
-              
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <Code className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-gray-800 text-sm">AI Explorer:</span>
-                    <span className="text-gray-600 ml-2 text-sm">
-                      Self-taught in AI, creating innovative projects like AI-powered career 
-                      tools and Alzheimer's support apps.
-                    </span>
-                  </div>
-                </div>
+            /* 
+            //  <div className="space-y-3">
+               // <div className="flex items-start gap-3">
+                 // <Code className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                 // <div>
+                  //  <span className="font-semibold text-gray-800 text-sm">AI Explorer:</span>
+                  //  <span className="text-gray-600 ml-2 text-sm">
+                     // Self-taught in AI, creating innovative projects like AI-powered career 
+                   //   tools and Alzheimer's support apps.
+                 //   </span>
+               //   </div>
+             //   </div>
                 
               //  <div className="flex items-start gap-3">
                 //  <Heart className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
@@ -112,6 +112,7 @@ Whether it’s building apps, leading workshops, or sharing a wellness tip — I
                 </div>
               </div>
             </div>
+            */
           </div>
 
           {/* Projects Section */}
@@ -139,12 +140,14 @@ Whether it’s building apps, leading workshops, or sharing a wellness tip — I
                 </a>
               ))}
             </div>
-            
-            //<div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-              //<p className="text-xs text-gray-600 text-center italic">
-                //"Bridging the gap between technology and human connection through innovative solutions."
-             // </p>
-            //</div>
+           
+            /* 
+             <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+              <p className="text-xs text-gray-600 text-center italic">
+              "Bridging the gap between technology and human connection through innovative solutions."
+              </p>
+            </div>
+            */
           </div>
         </div>
       </div>
