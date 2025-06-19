@@ -1,16 +1,15 @@
-
 import React from 'react';
 import { ExternalLink, Users } from 'lucide-react';
 
 const Index = () => {
   const projects = [
     {
-      title: "NeuroBlossom - Alzheimer's App",
+      title: "NeuroBlossom",
       url: "https://memory-match-buddy.lovable.app/home",
       color: "text-orange-500 hover:text-orange-600"
     },
     {
-      title: "AI Career Pathway Tool", 
+      title: "AI Career Tool", 
       url: "https://shanssvm.github.io/job-network-viz",
       color: "text-orange-500 hover:text-orange-600"
     },
@@ -20,7 +19,7 @@ const Index = () => {
       color: "text-orange-500 hover:text-orange-600"
     },
     {
-      title: "Nourish Stay Fit 4 Life",
+      title: "Nourish Stay Fit",
       url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/recipes-1",
       color: "text-blue-400 hover:text-blue-500"
     },
