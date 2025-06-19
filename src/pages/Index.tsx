@@ -88,7 +88,8 @@ Whether it’s building apps, leading workshops, or sharing a wellness tip — I
                  //   </span>
                //   </div>
              //   </div>
-                
+                */
+              /*
               //  <div className="flex items-start gap-3">
                 //  <Heart className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   //<div>
@@ -99,7 +100,8 @@ Whether it’s building apps, leading workshops, or sharing a wellness tip — I
                     //</span>
                  // </div>
                 //</div>
-                
+                */
+              /*
                // <div className="flex items-start gap-3">
                 //  <PenTool className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
                   //<div>
@@ -110,9 +112,10 @@ Whether it’s building apps, leading workshops, or sharing a wellness tip — I
                     //</span>
                   //</div>
                 </div>
+              */
               </div>
             </div>
-            */
+            
           </div>
 
           {/* Projects Section */}
