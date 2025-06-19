@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ExternalLink, Code, Heart, Users, PenTool } from 'lucide-react';
+import { ExternalLink, Users } from 'lucide-react';
 
 const Index = () => {
   const projects = [
@@ -32,9 +33,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
-      <div className="container mx-auto px-4 py-6 max-w-6xl">
+      <div className="container mx-auto px-4 py-4 max-w-6xl h-screen flex flex-col">
         {/* Header Section with Title and Image */}
-        <div className="flex items-center gap-6 mb-8">
+        <div className="flex items-center gap-6 mb-6">
           <div className="flex-1">
             <h1 className="text-3xl font-bold text-gray-800">Shanthi SSVM</h1>
           </div>
@@ -42,7 +43,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
               alt="Shanthi SSVM"
-              className="w-24 h-24 rounded-full object-cover border-4 border-gray-300 shadow-lg"
+              className="w-20 h-20 rounded-full object-cover border-4 border-gray-300 shadow-lg"
               style={{ objectPosition: 'center top' }}
             />
           </div>
@@ -60,11 +61,11 @@ const Index = () => {
           </a>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 flex-1 overflow-hidden">
           {/* Bio Section */}
-          <div className="space-y-4">
-            <div className="space-y-4">
-              <p className="text-base text-gray-600 leading-relaxed">
+          <div className="space-y-3 overflow-y-auto">
+            <div className="space-y-3">
+              <p className="text-sm text-gray-600 leading-relaxed">
                I'm a math girl who loves to solve problems with numbers — and it all started with one simple question: what really happens when you click 'send' on an email?
 That tiny moment sparked a lifelong <b>curiosity</b>. I wanted to understand the magic behind the screen — so I learned computer languages, and dove into the world of tech. What began with code quickly grew into a career.
 Over the past 18+ years, I've grown from a developer into a product manager, then into a digital strategist and consultant — blending business, creativity, and tech to solve real world problems. Today, I help individuals and organizations navigate the digital space by offering services in tech strategy, branding, AI implementation, and more.
@@ -73,62 +74,18 @@ While connecting a lifelong learning community, I noticed something unsettling: 
 I also host <b>AI Literacy Workshops</b> for both technical and non-technical audiences — from business leaders to nonprofits — helping others understand and use AI in ways that matter.
 No journey is linear but how quickly we rise and how we keep moving forward with faith is important — but every step has taught me how powerful it is when we combine knowledge, compassion, and action. 
 Whether it's building apps, leading workshops, or sharing a wellness tip — I show the same curiosity and big smile to help make life a little brighter — through tech, wellness, and human connection.
-
               </p>
-              
-              
-                
-                  
-                    
-                      
-                        AI Explorer:
-                      
-                      
-                        Self-taught in AI, creating innovative projects like AI-powered career 
-                        tools and Alzheimer's support apps.
-                      
-                    
-                  
-                
-                
-                  
-                    
-                      
-                        Fitness Advocate:
-                      
-                      
-                        As a group fitness instructor and half-marathon runner, you 
-                        inspire others to prioritize health and movement.
-                      
-                    
-                  
-                
-                
-                  
-                    
-                      
-                        Cultural Storyteller:
-                      
-                      
-                        I express myself through art, writing, and sharing stories that bridge 
-                        cultures and experiences.
-                      
-                    
-                  
-                
-              
             </div>
-            
           </div>
 
           {/* Projects Section */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="space-y-3 overflow-y-auto">
+            <div className="flex items-center gap-3 mb-3">
               <Users className="w-5 h-5 text-blue-500" />
               <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
             </div>
             
-            <div className="space-y-3">
+            <div className="space-y-2">
               {projects.map((project, index) => (
                 <a
                   key={index}
@@ -146,12 +103,6 @@ Whether it's building apps, leading workshops, or sharing a wellness tip — I s
                 </a>
               ))}
             </div>
-           
-            
-             
-              "Bridging the gap between technology and human connection through innovative solutions."
-              
-            
           </div>
         </div>
       </div>
