@@ -89,26 +89,26 @@ Whether it’s building apps, leading workshops, or sharing a wellness tip — I
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3">
-                  <Heart className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-gray-800 text-sm">Fitness Advocate:</span>
-                    <span className="text-gray-600 ml-2 text-sm">
-                      As a group fitness instructor and half-marathon runner, you 
-                      inspire others to prioritize health and movement.
-                    </span>
-                  </div>
-                </div>
+              //  <div className="flex items-start gap-3">
+                //  <Heart className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  //<div>
+                    //<span className="font-semibold text-gray-800 text-sm">Fitness Advocate:</span>
+                   // <span className="text-gray-600 ml-2 text-sm">
+                    //  As a group fitness instructor and half-marathon runner, you 
+                      //inspire others to prioritize health and movement.
+                    //</span>
+                 // </div>
+                //</div>
                 
-                <div className="flex items-start gap-3">
-                  <PenTool className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
-                  <div>
-                    <span className="font-semibold text-gray-800 text-sm">Cultural Storyteller:</span>
-                    <span className="text-gray-600 ml-2 text-sm">
-                      I express myself through art, writing, and sharing stories that bridge 
-                      cultures and experiences.
-                    </span>
-                  </div>
+               // <div className="flex items-start gap-3">
+                //  <PenTool className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                  //<div>
+                    //<span className="font-semibold text-gray-800 text-sm">Cultural Storyteller:</span>
+                    //<span className="text-gray-600 ml-2 text-sm">
+                      //I express myself through art, writing, and sharing stories that bridge 
+                     // cultures and experiences.
+                    //</span>
+                  //</div>
                 </div>
               </div>
             </div>
@@ -140,11 +140,11 @@ Whether it’s building apps, leading workshops, or sharing a wellness tip — I
               ))}
             </div>
             
-            <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-              <p className="text-xs text-gray-600 text-center italic">
-                "Bridging the gap between technology and human connection through innovative solutions."
-              </p>
-            </div>
+            //<div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+              //<p className="text-xs text-gray-600 text-center italic">
+                //"Bridging the gap between technology and human connection through innovative solutions."
+             // </p>
+            //</div>
           </div>
         </div>
       </div>
