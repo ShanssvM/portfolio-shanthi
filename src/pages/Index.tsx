@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { ExternalLink, Code, Heart, Users, PenTool } from 'lucide-react';
 
@@ -103,12 +104,6 @@ Whether it's building apps, leading workshops, or sharing a wellness tip — I s
                 </a>
               ))}
             </div>
-           
-            
-             
-              "Bridging the gap between technology and human connection through innovative solutions."
-              
-            
           </div>
         </div>
       </div>
@@ -117,3 +112,4 @@ Whether it's building apps, leading workshops, or sharing a wellness tip — I s
 };
 
 export default Index;
+
