@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ExternalLink, Users } from 'lucide-react';
 
@@ -83,21 +84,21 @@ Whether it's building apps, leading workshops, or sharing a wellness tip — I s
               <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
             </div>
             
-            <div className="space-y-2">
+            <div className="space-y-1">
               {projects.map((project, index) => (
                 <a
                   key={index}
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
+                  className={`group flex items-center gap-2 p-2 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
                 >
                   <div className="flex-1">
-                    <h3 className="font-medium text-sm group-hover:underline decoration-2 underline-offset-4">
+                    <h3 className="font-medium text-xs group-hover:underline decoration-2 underline-offset-4">
                       {project.title}
                     </h3>
                   </div>
-                  <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+                  <ExternalLink className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </a>
               ))}
             </div>
