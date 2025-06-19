@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ExternalLink, Code, Heart, Users, PenTool } from 'lucide-react';
 
@@ -73,52 +74,8 @@ While connecting a lifelong learning community, I noticed something unsettling: 
 I also host AI Literacy Workshops for both technical and non-technical audiences — from business leaders to nonprofits — helping others understand and use AI in ways that matter.
 No journey is linear but how quickly we rise and how we keep moving forward with faith is important — but every step has taught me how powerful it is when we combine knowledge, compassion, and action. 
 Whether it's building apps, leading workshops, or sharing a wellness tip — I show the same curiosity and big smile to help make life a little brighter — through tech, wellness, and human connection.
-
               </p>
-              
-              
-                
-                  
-                    
-                      
-                        AI Explorer:
-                      
-                      
-                        Self-taught in AI, creating innovative projects like AI-powered career 
-                        tools and Alzheimer's support apps.
-                      
-                    
-                  
-                
-                
-                  
-                    
-                      
-                        Fitness Advocate:
-                      
-                      
-                        As a group fitness instructor and half-marathon runner, you 
-                        inspire others to prioritize health and movement.
-                      
-                    
-                  
-                
-                
-                  
-                    
-                      
-                        Cultural Storyteller:
-                      
-                      
-                        I express myself through art, writing, and sharing stories that bridge 
-                        cultures and experiences.
-                      
-                    
-                  
-                
-              
             </div>
-            
           </div>
 
           {/* Projects Section */}
