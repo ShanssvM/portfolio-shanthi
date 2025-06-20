@@ -65,7 +65,7 @@ const Index = () => {
         <div className="flex-1 flex gap-6 overflow-hidden">
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
-            <p className="text-xs text-gray-600 leading-relaxed">
+            <p className="text-s text-gray-600 leading-relaxed">
              I'm a math girl who loves to solve problems with numbers — and it all started with one simple question: what really happens when you click 'send' on an email?
 That tiny moment sparked a lifelong <b>curiosity</b>. I wanted to understand the magic behind the screen — so I learned computer languages, and dove into the world of tech. What began with code quickly grew into a career.
 Over the past 18+ years, I've grown from a developer into a product manager, then into a digital strategist and consultant — blending business, creativity, and tech to solve real world problems. Today, I help individuals and organizations navigate the digital space by offering services in tech strategy, branding, AI implementation, and more.
