@@ -78,7 +78,7 @@ Whether it's building apps, leading workshops, or sharing a wellness tip — I s
           </div>
 
           {/* Right Side - Projects */}
-          <div className="w-50 flex-shrink-0">
+          <div className="w-40 flex-shrink-0">
             <div className="flex items-center gap-3 mb-3">
               <Users className="w-5 h-5 text-blue-500" />
               <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
@@ -98,7 +98,7 @@ Whether it's building apps, leading workshops, or sharing a wellness tip — I s
                       {project.title}
                     </h3>
                   </div>
-                  <ExternalLink className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
+                  <ExternalLink className="w-3 h-5 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </a>
               ))}
             </div>
