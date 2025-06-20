@@ -66,14 +66,12 @@ const Index = () => {
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
             <p className="text-s text-gray-600 leading-relaxed">
-             I'm a math girl who loves to solve problems with numbers — and it all started with one simple question: what really happens when you click 'send' on an email?
-That tiny moment sparked a lifelong <b>curiosity</b>. I wanted to understand the magic behind the screen — so I learned computer languages, and dove into the world of tech. What began with code quickly grew into a career.
-Over the past 18+ years, I've grown from a developer into a product manager, then into a digital strategist and consultant — blending business, creativity, and tech to solve real world problems. Today, I help individuals and organizations navigate the digital space by offering services in tech strategy, branding, AI implementation, and more.
-From my grandmothers and mom, I learned early on that <b>"health is wealth."</b>. That wisdom shaped the way I live — eating with awareness, moving with purpose, and caring for both mind and body. That's how <b>NourishStayFit4Life</b> was born — not just a mantra, but a lifestyle rooted in balance and well-being.
-While connecting a lifelong learning community, I noticed something unsettling: so many individuals — bright, driven, vibrant — were forgetting things as we age. I learned about the caregivers, not just details here and there, but meaningful parts of life. As a techy girl who also values health and empathy, I couldn't look away. I had to help. That led to blend technology, wellness, and humanity - That's what led to <b>NeuroBlossom</b> — an AI-powered support app for Alzheimer's - designed with care and empathy, it's a small piece of technology.
-I also host <b>AI Literacy Workshops</b> for both technical and non-technical audiences — from business leaders to nonprofits — helping others understand and use AI in ways that matter.
-No journey is linear but how quickly we rise and how we keep moving forward with faith is important — but every step has taught me how powerful it is when we combine knowledge, compassion, and action. 
-Whether it's building apps, leading workshops, or sharing a wellness tip — I show the same curiosity and big smile to help make life a little brighter — through tech, wellness, and human connection.
+             It all started with a simple question: "What happens when you click 'send' on an email?"
+That curiosity transformed a math girl into a self-taught coder with 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.
+I founded NourishStayFit4Life (inspired by my grandmothers' wisdom that "health is wealth") and created NeuroBlossom, an AI-powered Alzheimer's support app—because when technology meets love, beautiful things happen.
+Through my AI Literacy Workshops and consulting work, I help everyone from seasoned developers to complete beginners understand and use AI meaningfully. I specialize in tech strategy, product vision, AI integration, data analysis & research, and authentic branding that's backed by insights, not just intuition.
+I'm driven by curiosity, fueled by compassion, and motivated by connection. When we work together, you're getting someone who genuinely cares about your success and will show up with a smile, a plan, a purpose—and the data to prove it works.
+Ready to build something meaningful together?
             </p>
           </div>
 
