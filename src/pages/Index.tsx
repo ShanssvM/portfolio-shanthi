@@ -9,18 +9,13 @@ const Index = () => {
       url: "https://memory-match-buddy.lovable.app/home",
       color: "text-orange-500 hover:text-orange-600"
     },
-    {
-      title: "AI Career Tool", 
-      url: "https://shanssvm.github.io/job-network-viz",
-      color: "text-orange-500 hover:text-orange-600"
-    },
-    {
+   {
       title: "Spur Spark",
       url: "https://sites.google.com/view/spur-spark/home", 
       color: "text-orange-500 hover:text-orange-600"
     },
     {
-      title: "Nourish Stay Fit",
+      title: "Nourish Stay Fit 4 Life",
       url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/recipes-1",
       color: "text-blue-400 hover:text-blue-500"
     },
@@ -29,6 +24,11 @@ const Index = () => {
       url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
       color: "text-teal-500 hover:text-teal-600"
     }
+    {
+      title: "AI Career Tool", 
+      url: "https://shanssvm.github.io/job-network-viz",
+      color: "text-orange-500 hover:text-orange-600"
+    },
   ];
 
   return (
