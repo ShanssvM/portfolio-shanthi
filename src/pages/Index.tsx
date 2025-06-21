@@ -35,17 +35,17 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 py-3 max-w-6xl h-screen flex flex-col">
         
-         <a 
+         {/* Header Section with Title and Image */}
+        <div className="flex items-center gap-6 mb-4">
+          <div className="flex-1">
+            <h1 className="text-3xl font-bold text-gray-800">Shanthi SSVM</h1>
+          </div>
+          <a 
             href=" https://shanthimari.wixsite.com/cv-pm" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >Resume</a>
-        {/* Header Section with Title and Image */}
-        <div className="flex items-center gap-6 mb-4">
-          <div className="flex-1">
-            <h1 className="text-3xl font-bold text-gray-800">Shanthi SSVM</h1>
-          </div>
           <div className="flex-shrink-0">
             <img 
               src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png" 
