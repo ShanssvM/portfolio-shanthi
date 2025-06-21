@@ -65,18 +65,18 @@ const Index = () => {
         <div className="flex-1 flex gap-6 overflow-hidden">
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
-            <p className="text-s text-gray-600 leading-relaxed">
-             It all started with a simple question: "What happens when you click 'send' on an email?"
+            <p className="text-m text-gray-600 leading-relaxed">
+             <b>It all started with a simple question: "What happens when you click 'send' on an email?"</b>
 That curiosity transformed a math girl into a self-taught coder with 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.
-I founded NourishStayFit4Life (inspired by my grandmothers' wisdom that "health is wealth") and created NeuroBlossom, an AI-powered Alzheimer's support app—because when technology meets love, beautiful things happen.
-Through my AI Literacy Workshops and consulting work, I help everyone from seasoned developers to complete beginners understand and use AI meaningfully. I specialize in tech strategy, product vision, AI integration, data analysis & research, and authentic branding that's backed by insights, not just intuition.
+I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app—because when technology meets love, beautiful things happen.
+Through my <b>AI Literacy Workshops</b> and consulting work, I help everyone from seasoned developers to complete beginners understand and use AI meaningfully. I specialize in tech strategy, product vision, AI integration, data analysis & research, and authentic branding that's backed by insights, not just intuition.
 I'm driven by curiosity, fueled by compassion, and motivated by connection. When we work together, you're getting someone who genuinely cares about your success and will show up with a smile, a plan, a purpose—and the data to prove it works.
-Ready to build something meaningful together?
+<l>Ready to build something meaningful together?</l>
             </p>
           </div>
 
           {/* Right Side - Projects */}
-          <div className="w-65 flex-shrink-0">
+          <div className="w-75 flex-shrink-0">
             <div className="flex items-center gap-2 mb-2">
               <Users className="w-4 h-4 text-blue-500" />
               <h2 className="text-lg font-bold text-gray-800">Featured Projects</h2>
