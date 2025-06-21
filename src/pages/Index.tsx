@@ -67,7 +67,8 @@ const Index = () => {
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
             <p className="text-lg text-gray-600 leading-relaxed">
-             <b>It all started with a simple question: "What happens when you click 'send' on an email?"</b><br>
+            <p> <b>It all started with a simple question: "What happens when you click 'send' on an email?"</b></p>
+              <br>
 <p>That curiosity transformed a math girl into a self-taught coder with 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
 <p>I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app—because when technology meets love, beautiful things happen.</p>
 <p>Through my <b>AI Literacy Workshops</b> and consulting work, I believe AI should be your helpful assistant. Through <b>SpurSpark</b>, I provide consulting in tech strategy, product vision, AI solutions, data analysis & research, and authentic branding.</p>
