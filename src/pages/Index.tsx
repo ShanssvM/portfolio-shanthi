@@ -92,7 +92,7 @@ Ready to build something meaningful together?
                   className={`group flex items-center gap-1 p-1 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
                 >
                   <div className="flex-1">
-                    <h3 className="font-medium text-xs group-hover:underline decoration-2 underline-offset-4">
+                    <h3 className="font-medium text-s group-hover:underline decoration-2 underline-offset-4">
                       {project.title}
                     </h3>
                   </div>
