@@ -41,7 +41,7 @@ const Index = () => {
           </div>
           <div className="flex-shrink-0">
             <img 
-              src="/lovable-uploads/6395cc04-71c7-4632-8e4e-83c880177be8.png" 
+              src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png" 
               alt="Shanthi SSVM"
               className="w-16 h-16 rounded-full object-cover border-4 border-gray-300 shadow-lg"
               style={{ objectPosition: 'center top' }}
@@ -76,10 +76,10 @@ Ready to build something meaningful together?
           </div>
 
           {/* Right Side - Projects */}
-          <div className="w-60 flex-shrink-0">
-            <div className="flex items-center gap-3 mb-3">
-              <Users className="w-5 h-5 text-blue-500" />
-              <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
+          <div className="w-48 flex-shrink-0">
+            <div className="flex items-center gap-2 mb-2">
+              <Users className="w-4 h-4 text-blue-500" />
+              <h2 className="text-lg font-bold text-gray-800">Featured Projects</h2>
             </div>
             
             <div className="space-y-1">
@@ -89,14 +89,14 @@ Ready to build something meaningful together?
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group flex items-center gap-2 p-2 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
+                  className={`group flex items-center gap-1 p-1 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
                 >
                   <div className="flex-1">
-                    <h3 className="font-medium text-s group-hover:underline decoration-2 underline-offset-4">
+                    <h3 className="font-medium text-xs group-hover:underline decoration-2 underline-offset-4">
                       {project.title}
                     </h3>
                   </div>
-                  <ExternalLink className="w-5 h-5 opacity-50 group-hover:opacity-100 transition-opacity" />
+                  <ExternalLink className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </a>
               ))}
             </div>
