@@ -66,7 +66,7 @@ const Index = () => {
         <div className="flex-1 flex gap-6 overflow-hidden">
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
-            <p className="text-m text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
             <p> <b> A numbers (math) loving girl staring at her computer, genuinely puzzled by something we all do dozens of times a day - "What happens when you click 'send' on an email?"</b></p>
               
 <p>That curiosity transformed me into a self-taught coder with an MBA from Carlson School of Business and 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
