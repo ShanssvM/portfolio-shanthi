@@ -28,8 +28,7 @@ const Index = () => {
       title: "AI Career Tool", 
       url: "https://shanssvm.github.io/job-network-viz",
       color: "text-orange-500 hover:text-orange-600"
-    },
-
+    }
   ];
 
 
