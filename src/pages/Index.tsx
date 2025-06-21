@@ -45,7 +45,7 @@ const Index = () => {
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
-          >Resume</a>
+          ><b>Resume</b></a>
           <div className="flex-shrink-0">
             <img 
               src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png" 
