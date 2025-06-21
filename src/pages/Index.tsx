@@ -23,7 +23,7 @@ const Index = () => {
       title: "Blog",
       url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
       color: "text-teal-500 hover:text-teal-600"
-    }
+    },
     {
       title: "AI Career Tool", 
       url: "https://shanssvm.github.io/job-network-viz",
@@ -31,7 +31,7 @@ const Index = () => {
     },
 
   ];
-}
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
