@@ -29,11 +29,18 @@ const Index = () => {
       url: "https://shanssvm.github.io/job-network-viz",
       color: "text-orange-500 hover:text-orange-600"
     }
-  ];
+];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 py-3 max-w-6xl h-screen flex flex-col">
+        
+         <a 
+            href=" https://shanthimari.wixsite.com/cv-pm" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+          >Resume</a>
         {/* Header Section with Title and Image */}
         <div className="flex items-center gap-6 mb-4">
           <div className="flex-1">
