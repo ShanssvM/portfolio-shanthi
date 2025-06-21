@@ -10,7 +10,7 @@ const Index = () => {
       color: "text-orange-500 hover:text-orange-600"
     },
    {
-      title: "Spur Spark",
+      title: "SpurSpark",
       url: "https://sites.google.com/view/spur-spark/home", 
       color: "text-orange-500 hover:text-orange-600"
     },
