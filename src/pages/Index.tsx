@@ -67,9 +67,9 @@ const Index = () => {
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
             <p className="text-m text-gray-600 leading-relaxed">
-            <p> <b>a math girl staring at her computer, genuinely puzzled by something we all do dozens of times a day - "What happens when you click 'send' on an email?"</b></p>
+            <p> <b> A numbers (math) loving girl staring at her computer, genuinely puzzled by something we all do dozens of times a day - "What happens when you click 'send' on an email?"</b></p>
               
-<p>That curiosity transformed me into a self-taught coder with 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
+<p>That curiosity transformed me into a self-taught coder with an MBA from Carlson School of Business and 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
 <p>I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app — because when technology meets empathy & care, beautiful things happen.</p>
 <p>Through my <b>AI Literacy Workshops</b> and consulting work, I believe AI should be your helpful assistant. Through <b>SpurSpark</b>, I provide consulting in tech strategy, product vision, AI solutions, data analysis & research, and authentic branding.</p>
 <p>I'm driven by curiosity, fueled by compassion, and motivated by connection. When we work together, you're getting someone who genuinely cares about your success and will show up with a smile, a plan, a purpose and the data to prove it works.</p>
