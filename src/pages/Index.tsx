@@ -29,8 +29,9 @@ const Index = () => {
       url: "https://shanssvm.github.io/job-network-viz",
       color: "text-orange-500 hover:text-orange-600"
     },
-}
+
   ];
+}
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
