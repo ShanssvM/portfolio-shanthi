@@ -76,7 +76,7 @@ Ready to build something meaningful together?
           </div>
 
           {/* Right Side - Projects */}
-          <div className="w-48 flex-shrink-0">
+          <div className="w-65 flex-shrink-0">
             <div className="flex items-center gap-2 mb-2">
               <Users className="w-4 h-4 text-blue-500" />
               <h2 className="text-lg font-bold text-gray-800">Featured Projects</h2>
