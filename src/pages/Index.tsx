@@ -66,7 +66,7 @@ const Index = () => {
         <div className="flex-1 flex gap-6 overflow-hidden">
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
-            <p className="text-m text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
              <b>It all started with a simple question: "What happens when you click 'send' on an email?"</b>
 That curiosity transformed a math girl into a self-taught coder with 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.
 I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app—because when technology meets love, beautiful things happen.
@@ -93,7 +93,7 @@ I'm driven by curiosity, fueled by compassion, and motivated by connection. When
                   className={`group flex items-center gap-1 p-1 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
                 >
                   <div className="flex-1">
-                    <h3 className="font-medium text-s group-hover:underline decoration-2 underline-offset-4">
+                    <h3 className="font-medium text-m group-hover:underline decoration-2 underline-offset-4">
                       {project.title}
                     </h3>
                   </div>
