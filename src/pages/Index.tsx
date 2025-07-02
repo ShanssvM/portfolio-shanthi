@@ -6,7 +6,7 @@ const Index = () => {
   const projects = [
     {
       title: "NeuroBlossom",
-      url: "https://memory-match-buddy.lovable.app/home",
+      url: "https://neuro-blossom.netlify.app/",
       color: "text-orange-500 hover:text-orange-600"
     },
    {
