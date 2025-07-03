@@ -73,7 +73,7 @@ const Index = () => {
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
             <p className="text-lg text-gray-600 leading-relaxed">
-            <p> <b> A math-loving <l>(Masters in Mathematics)</l>, data-curious young girl once sat 
+            <p> <b> A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat 
               staring at her computer, genuinely puzzled by something we 
               all do dozens of times a day — "What happens when I 
               click send on an email?"</b></p>
