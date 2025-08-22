@@ -9,6 +9,12 @@ const Index = () => {
       url: "https://neuro-blossom.netlify.app/",
       color: "text-orange-500 hover:text-orange-600"
     },
+    {
+      title: "Responsible AI with ShanthiSSVM",
+      url: "https://shanssvm.github.io/ai-with-shanthi/", 
+      color: "text-orange-500 hover:text-orange-600"
+    },
+    
    {
       title: "SpurSpark",
       url: "https://sites.google.com/view/spur-spark/home", 
