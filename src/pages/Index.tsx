@@ -19,7 +19,7 @@ const Index = () => {
         }
         {
           title: "Vedic Math (in progress)",
-          url: "",
+          url: "underconstruction",
           color: "text-purple-500 hover:text-purple-600"
         }
       ]
