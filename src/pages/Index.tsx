@@ -107,7 +107,7 @@ const Index = () => {
         <div className="flex-1 flex gap-6 overflow-hidden">
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-base text-gray-600 leading-relaxed">
             <p> <b> A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat 
               staring at her computer, genuinely puzzled by something we 
               all do dozens of times a day — "What happens when I 
