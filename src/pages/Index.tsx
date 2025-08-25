@@ -128,7 +128,7 @@ const Index = () => {
               <h2 className="text-lg font-bold text-gray-800">Creative Highlights</h2>
             </div>
             
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-3 divide-x divide-gray-200">
               {/* Left column - Apps & AI */}
               <div className="space-y-3">
                 {projectCategories.slice(0, 2).map((category, categoryIndex) => (
@@ -159,7 +159,7 @@ const Index = () => {
               </div>
               
               {/* Right column - Health & Consulting */}
-              <div className="space-y-3">
+              <div className="space-y-3 pl-3">
                 {projectCategories.slice(2, 4).map((category, categoryIndex) => (
                   <div key={categoryIndex} className="space-y-1">
                     <h3 className="text-sm font-semibold text-gray-700 border-b border-gray-200 pb-0.5">
