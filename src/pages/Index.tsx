@@ -123,7 +123,7 @@ const Index = () => {
 
           {/* Right Side - Projects */}
           <div className="w-112 flex-shrink-0">
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center justify-center gap-2 mb-3">
               <Users className="w-5 h-5 text-blue-500" />
               <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
             </div>
