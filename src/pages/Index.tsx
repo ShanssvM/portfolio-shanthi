@@ -25,7 +25,7 @@ const Index = () => {
       ]
     },
     {
-      category: "AI",
+      category: "Artificial Intelligence",
       projects: [
         {
           title: "Responsible AI with ShanthiSSVM",
@@ -68,7 +68,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
-      <div className="px-2 py-3 max-w-none h-screen flex flex-col">
+      <div className="container mx-auto px-4 py-3 max-w-6xl h-screen flex flex-col">
         
          {/* Header Section with Title and Image */}
         <div className="flex items-center gap-6 mb-4">
@@ -104,10 +104,10 @@ const Index = () => {
         </div>
 
         {/* Main Content - Split Layout */}
-        <div className="flex-1 flex gap-4 overflow-hidden">
+        <div className="flex-1 flex gap-6 overflow-hidden">
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed">
             <p> <b> A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat 
               staring at her computer, genuinely puzzled by something we 
               all do dozens of times a day — "What happens when I 
@@ -122,13 +122,13 @@ const Index = () => {
           </div>
 
           {/* Right Side - Projects */}
-          <div className="w-112 flex-shrink-0 overflow-y-auto">
-            <div className="flex items-center gap-2 mb-2">
+          <div className="w-112 flex-shrink-0">
+            <div className="flex items-center gap-2 mb-3">
               <Users className="w-5 h-5 text-blue-500" />
-              <h2 className="text-lg font-bold text-gray-800">Featured Projects</h2>
+              <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
             </div>
             
-            <div className="space-y-3">
+            <div className="space-y-4">
               {projectCategories.map((category, categoryIndex) => (
                 <div key={categoryIndex} className="space-y-2">
                   <h3 className="text-lg font-semibold text-gray-700 border-b border-gray-200 pb-1">
