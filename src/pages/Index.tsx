@@ -12,6 +12,16 @@ const Index = () => {
           url: "https://neuro-blossom.netlify.app/",
           color: "text-purple-500 hover:text-purple-600"
         }
+        {
+          title: "Wellness Journal",
+          url: "https://app--snap-bites-daae07e4.base44.app",
+          color: "text-purple-500 hover:text-purple-600"
+        }
+        {
+          title: "Vedic Math (in progress)",
+          url: "",
+          color: "text-purple-500 hover:text-purple-600"
+        }
       ]
     },
     {
