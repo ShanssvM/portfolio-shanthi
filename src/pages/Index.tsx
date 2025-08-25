@@ -128,27 +128,27 @@ const Index = () => {
               <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
             </div>
             
-            <div className="space-y-4">
+            <div className="space-y-3">
               {projectCategories.map((category, categoryIndex) => (
-                <div key={categoryIndex} className="space-y-2">
-                  <h3 className="text-lg font-semibold text-gray-700 border-b border-gray-200 pb-1">
+                <div key={categoryIndex} className="space-y-1.5">
+                  <h3 className="text-base font-semibold text-gray-700 border-b border-gray-200 pb-0.5">
                     {category.category}
                   </h3>
-                  <div className="space-y-1">
+                  <div className="space-y-0.5">
                     {category.projects.map((project, projectIndex) => (
                       <a
                         key={projectIndex}
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2.5 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
+                        className={`group flex items-center gap-2 p-2 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
                       >
                         <div className="flex-1">
-                          <h4 className="font-medium text-sm group-hover:underline decoration-2 underline-offset-4">
+                          <h4 className="font-medium text-xs group-hover:underline decoration-2 underline-offset-4">
                             {project.title}
                           </h4>
                         </div>
-                        <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+                        <ExternalLink className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
                       </a>
                     ))}
                   </div>
