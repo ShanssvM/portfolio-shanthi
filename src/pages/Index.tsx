@@ -68,24 +68,24 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
-      <div className="container mx-auto px-4 py-3 max-w-6xl h-screen flex flex-col">
+      <div className="container mx-auto px-4 py-2 max-w-6xl h-screen flex flex-col">
         
          {/* Header Section with Title and Image */}
-        <div className="flex items-center gap-6 mb-4">
+        <div className="flex items-center gap-4 mb-2">
           <div className="flex-1">
-            <h1 className="text-3xl font-bold text-gray-800">Shanthi SSVM</h1>
+            <h1 className="text-2xl font-bold text-gray-800">Shanthi SSVM</h1>
           </div>
           <a 
             href=" https://shanthimari.wixsite.com/cv-pm" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity text-sm"
           ><b>Resume</b></a>
           <div className="flex-shrink-0">
             <img 
               src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png" 
               alt="Shanthi SSVM"
-              className="w-16 h-16 rounded-full object-cover border-4 border-gray-300 shadow-lg"
+              className="w-12 h-12 rounded-full object-cover border-2 border-gray-300 shadow-lg"
               style={{ objectPosition: 'center top' }}
             />
           </div>
@@ -98,16 +98,16 @@ const Index = () => {
             <img 
               src="/lovable-uploads/f27d6b5c-2df9-4583-bbca-9966ae5c253a.png" 
               alt="LinkedIn" 
-              className="w-7 h-7"
+              className="w-6 h-6"
             />
           </a>
         </div>
 
         {/* Main Content - Split Layout */}
-        <div className="flex-1 flex gap-6 overflow-hidden">
+        <div className="flex-1 flex gap-4 overflow-hidden">
           {/* Left Side - Bio */}
-          <div className="flex-1 overflow-y-auto">
-            <p className="text-base text-gray-600 leading-relaxed">
+          <div className="flex-1">
+            <p className="text-sm text-gray-600 leading-relaxed space-y-2">
             <p> <b> A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat 
               staring at her computer, genuinely puzzled by something we 
               all do dozens of times a day — "What happens when I 
@@ -122,38 +122,70 @@ const Index = () => {
           </div>
 
           {/* Right Side - Projects */}
-          <div className="w-112 flex-shrink-0">
-            <div className="flex items-center gap-2 mb-3">
-              <Users className="w-5 h-5 text-blue-500" />
-              <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
+          <div className="w-96 flex-shrink-0">
+            <div className="flex items-center gap-2 mb-2 justify-center">
+              <Users className="w-4 h-4 text-blue-500" />
+              <h2 className="text-lg font-bold text-gray-800">Creative Highlights</h2>
             </div>
             
-            <div className="space-y-4">
-              {projectCategories.map((category, categoryIndex) => (
-                <div key={categoryIndex} className="space-y-2">
-                  <h3 className="text-lg font-semibold text-gray-700 border-b border-gray-200 pb-1">
-                    {category.category}
-                  </h3>
-                  <div className="space-y-1">
-                    {category.projects.map((project, projectIndex) => (
-                      <a
-                        key={projectIndex}
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2.5 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
-                      >
-                        <div className="flex-1">
-                          <h4 className="font-medium text-sm group-hover:underline decoration-2 underline-offset-4">
-                            {project.title}
-                          </h4>
-                        </div>
-                        <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
-                      </a>
-                    ))}
+            <div className="grid grid-cols-2 gap-3">
+              {/* Left column - Apps & AI */}
+              <div className="space-y-3">
+                {projectCategories.slice(0, 2).map((category, categoryIndex) => (
+                  <div key={categoryIndex} className="space-y-1">
+                    <h3 className="text-sm font-semibold text-gray-700 border-b border-gray-200 pb-0.5">
+                      {category.category}
+                    </h3>
+                    <div className="space-y-1">
+                      {category.projects.map((project, projectIndex) => (
+                        <a
+                          key={projectIndex}
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`group flex items-center gap-1.5 p-1.5 rounded-md bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
+                        >
+                          <div className="flex-1">
+                            <h4 className="font-medium text-xs group-hover:underline decoration-1 underline-offset-2">
+                              {project.title}
+                            </h4>
+                          </div>
+                          <ExternalLink className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+              
+              {/* Right column - Health & Consulting */}
+              <div className="space-y-3">
+                {projectCategories.slice(2, 4).map((category, categoryIndex) => (
+                  <div key={categoryIndex} className="space-y-1">
+                    <h3 className="text-sm font-semibold text-gray-700 border-b border-gray-200 pb-0.5">
+                      {category.category}
+                    </h3>
+                    <div className="space-y-1">
+                      {category.projects.map((project, projectIndex) => (
+                        <a
+                          key={projectIndex}
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`group flex items-center gap-1.5 p-1.5 rounded-md bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
+                        >
+                          <div className="flex-1">
+                            <h4 className="font-medium text-xs group-hover:underline decoration-1 underline-offset-2">
+                              {project.title}
+                            </h4>
+                          </div>
+                          <ExternalLink className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
