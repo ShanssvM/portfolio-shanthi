@@ -87,7 +87,7 @@ const Index = () => {
           
           {/* Bio Section - 4 columns */}
           <div className="col-span-4">
-            <div className="text-xs text-gray-600 leading-relaxed space-y-1.5 h-full">
+            <div className="text-sm text-gray-600 leading-relaxed space-y-2 h-full">
               <p><b>A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat staring at her computer, genuinely puzzled by something we all do dozens of times a day — "What happens when I click send on an email?"</b></p>
               <p>That curiosity transformed me into a self-taught coder with an MBA from Carlson School of Business and 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
               <p>I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app — because when technology meets empathy & care, beautiful things happen.</p>
