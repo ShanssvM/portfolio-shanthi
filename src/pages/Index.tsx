@@ -68,7 +68,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
-      <div className="container mx-auto px-4 py-3 max-w-6xl h-screen flex flex-col">
+      <div className="container mx-auto pl-2 pr-4 py-3 max-w-6xl h-screen flex flex-col">
         
          {/* Header Section with Title and Image */}
         <div className="flex items-center gap-6 mb-4">
@@ -104,7 +104,7 @@ const Index = () => {
         </div>
 
         {/* Main Content - Split Layout */}
-        <div className="flex-1 flex gap-6 overflow-hidden">
+        <div className="flex-1 flex gap-4 overflow-hidden">
           {/* Left Side - Bio */}
           <div className="flex-1 overflow-y-auto">
             <p className="text-lg text-gray-600 leading-relaxed">
