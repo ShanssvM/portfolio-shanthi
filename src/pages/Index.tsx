@@ -3,39 +3,58 @@ import React from 'react';
 import { ExternalLink, Users } from 'lucide-react';
 
 const Index = () => {
-  const projects = [
+  const projectCategories = [
     {
-      title: "NeuroBlossom",
-      url: "https://neuro-blossom.netlify.app/",
-      color: "text-orange-500 hover:text-orange-600"
+      category: "Apps",
+      projects: [
+        {
+          title: "NeuroBlossom",
+          url: "https://neuro-blossom.netlify.app/",
+          color: "text-purple-500 hover:text-purple-600"
+        }
+      ]
     },
     {
-      title: "Responsible AI with ShanthiSSVM",
-      url: "https://shanssvm.github.io/ai-with-shanthi/", 
-      color: "text-orange-500 hover:text-orange-600"
-    },
-    
-   {
-      title: "SpurSpark",
-      url: "https://sites.google.com/view/spur-spark/home", 
-      color: "text-orange-500 hover:text-orange-600"
-    },
-    {
-      title: "Nourish Stay Fit 4 Life",
-      url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/recipes-1",
-      color: "text-blue-400 hover:text-blue-500"
-    },
-    {
-      title: "Blog",
-      url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
-      color: "text-teal-500 hover:text-teal-600"
+      category: "AI",
+      projects: [
+        {
+          title: "Responsible AI with ShanthiSSVM",
+          url: "https://shanssvm.github.io/ai-with-shanthi/", 
+          color: "text-blue-500 hover:text-blue-600"
+        },
+        {
+          title: "AI Career Tool", 
+          url: "https://shanssvm.github.io/job-network-viz",
+          color: "text-blue-500 hover:text-blue-600"
+        }
+      ]
     },
     {
-      title: "AI Career Tool", 
-      url: "https://shanssvm.github.io/job-network-viz",
-      color: "text-orange-500 hover:text-orange-600"
+      category: "Health is Wealth",
+      projects: [
+        {
+          title: "Nourish Stay Fit 4 Life",
+          url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/recipes-1",
+          color: "text-green-500 hover:text-green-600"
+        },
+        {
+          title: "Blog",
+          url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
+          color: "text-green-500 hover:text-green-600"
+        }
+      ]
+    },
+    {
+      category: "Consulting",
+      projects: [
+        {
+          title: "SpurSpark",
+          url: "https://sites.google.com/view/spur-spark/home", 
+          color: "text-orange-500 hover:text-orange-600"
+        }
+      ]
     }
-];
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
@@ -99,22 +118,31 @@ const Index = () => {
               <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
             </div>
             
-            <div className="space-y-2">
-              {projects.map((project, index) => (
-                <a
-                  key={index}
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`group flex items-center gap-2 p-3 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
-                >
-                  <div className="flex-1">
-                    <h3 className="font-medium text-base group-hover:underline decoration-2 underline-offset-4">
-                      {project.title}
-                    </h3>
+            <div className="space-y-4">
+              {projectCategories.map((category, categoryIndex) => (
+                <div key={categoryIndex} className="space-y-2">
+                  <h3 className="text-lg font-semibold text-gray-700 border-b border-gray-200 pb-1">
+                    {category.category}
+                  </h3>
+                  <div className="space-y-1">
+                    {category.projects.map((project, projectIndex) => (
+                      <a
+                        key={projectIndex}
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group flex items-center gap-2 p-2.5 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300 hover:scale-[1.02] ${project.color}`}
+                      >
+                        <div className="flex-1">
+                          <h4 className="font-medium text-sm group-hover:underline decoration-2 underline-offset-4">
+                            {project.title}
+                          </h4>
+                        </div>
+                        <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+                      </a>
+                    ))}
                   </div>
-                  <ExternalLink className="w-5 h-5 opacity-50 group-hover:opacity-100 transition-opacity" />
-                </a>
+                </div>
               ))}
             </div>
           </div>
