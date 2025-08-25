@@ -128,9 +128,9 @@ const Index = () => {
               <h2 className="text-xl font-bold text-gray-800">Featured Projects</h2>
             </div>
             
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-3 divide-x divide-gray-200">
               {projectCategories.map((category, categoryIndex) => (
-                <div key={categoryIndex} className="space-y-1.5">
+                <div key={categoryIndex} className="space-y-1.5 pl-3 first:pl-0">
                   <h3 className="text-base font-semibold text-gray-700 border-b border-gray-200 pb-0.5">
                     {category.category}
                   </h3>
