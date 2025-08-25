@@ -67,27 +67,27 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
-      <div className="container mx-auto px-4 py-2 max-w-7xl h-screen flex flex-col">
+    <div className="h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
+      <div className="container mx-auto px-3 py-2 max-w-7xl h-full flex flex-col">
         
-        {/* Compact Header */}
-        <div className="flex items-center justify-between mb-3">
-          <h1 className="text-2xl font-bold text-gray-800">Shanthi SSVM</h1>
-          <div className="flex items-center gap-4">
-            <a href="https://shanthimari.wixsite.com/cv-pm" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold hover:opacity-80">Resume</a>
-            <img src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png" alt="Shanthi SSVM" className="w-12 h-12 rounded-full object-cover border-2 border-gray-300" style={{ objectPosition: 'center top' }} />
+        {/* Ultra Compact Header */}
+        <div className="flex items-center justify-between mb-2">
+          <h1 className="text-xl font-bold text-gray-800">Shanthi SSVM</h1>
+          <div className="flex items-center gap-3">
+            <a href="https://shanthimari.wixsite.com/cv-pm" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold hover:opacity-80">Resume</a>
+            <img src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png" alt="Shanthi SSVM" className="w-8 h-8 rounded-full object-cover border border-gray-300" style={{ objectPosition: 'center top' }} />
             <a href="https://www.linkedin.com/in/helloshanthissv/" target="_blank" rel="noopener noreferrer">
-              <img src="/lovable-uploads/f27d6b5c-2df9-4583-bbca-9966ae5c253a.png" alt="LinkedIn" className="w-6 h-6" />
+              <img src="/lovable-uploads/f27d6b5c-2df9-4583-bbca-9966ae5c253a.png" alt="LinkedIn" className="w-5 h-5" />
             </a>
           </div>
         </div>
 
-        {/* Main Grid Layout */}
-        <div className="flex-1 grid grid-cols-3 gap-4 overflow-hidden">
+        {/* Ultra Compact Grid Layout */}
+        <div className="flex-1 grid grid-cols-5 gap-3 min-h-0">
           
-          {/* Bio Section - 2 columns */}
-          <div className="col-span-2 overflow-y-auto pr-2">
-            <div className="text-sm text-gray-600 leading-relaxed space-y-2">
+          {/* Bio Section - 3 columns */}
+          <div className="col-span-3">
+            <div className="text-xs text-gray-600 leading-relaxed space-y-1.5 h-full">
               <p><b>A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat staring at her computer, genuinely puzzled by something we all do dozens of times a day — "What happens when I click send on an email?"</b></p>
               <p>That curiosity transformed me into a self-taught coder with an MBA from Carlson School of Business and 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
               <p>I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app — because when technology meets empathy & care, beautiful things happen.</p>
@@ -97,18 +97,18 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Projects Section - 1 column */}
-          <div className="overflow-y-auto">
-            <div className="flex items-center gap-2 mb-3">
-              <Users className="w-4 h-4 text-blue-500" />
-              <h2 className="text-lg font-bold text-gray-800">Featured Projects</h2>
+          {/* Projects Section - 2 columns */}
+          <div className="col-span-2">
+            <div className="flex items-center gap-1 mb-2">
+              <Users className="w-3 h-3 text-blue-500" />
+              <h2 className="text-sm font-bold text-gray-800">Featured Projects</h2>
             </div>
             
-            <div className="space-y-3">
+            <div className="space-y-2">
               {projectCategories.map((category, categoryIndex) => (
-                <div key={categoryIndex} className="bg-white rounded-lg p-3 shadow-sm border border-gray-100">
-                  <h3 className="text-sm font-bold text-gray-700 mb-2 flex items-center gap-1">
-                    <div className={`w-2 h-2 rounded-full ${
+                <div key={categoryIndex} className="bg-white rounded p-2 shadow-sm border border-gray-100">
+                  <h3 className="text-xs font-bold text-gray-700 mb-1 flex items-center gap-1">
+                    <div className={`w-1.5 h-1.5 rounded-full ${
                       category.category === 'Apps' ? 'bg-purple-500' :
                       category.category === 'AI' ? 'bg-blue-500' :
                       category.category === 'Health is Wealth' ? 'bg-green-500' :
@@ -116,21 +116,21 @@ const Index = () => {
                     }`}></div>
                     {category.category}
                   </h3>
-                  <div className="space-y-1">
+                  <div className="space-y-0.5">
                     {category.projects.map((project, projectIndex) => (
                       <a
                         key={projectIndex}
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2 rounded hover:bg-gray-50 transition-colors ${project.color}`}
+                        className={`group flex items-center gap-1 p-1.5 rounded hover:bg-gray-50 transition-colors ${project.color}`}
                       >
-                        <div className="flex-1">
-                          <h4 className="font-medium text-xs leading-tight group-hover:underline">
+                        <div className="flex-1 min-w-0">
+                          <h4 className="font-medium text-xs leading-tight group-hover:underline truncate">
                             {project.title}
                           </h4>
                         </div>
-                        <ExternalLink className="w-3 h-3 opacity-40 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                        <ExternalLink className="w-2.5 h-2.5 opacity-40 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                       </a>
                     ))}
                   </div>
