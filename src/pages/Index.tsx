@@ -116,8 +116,8 @@ const Index = () => {
 <p>That curiosity transformed me into a self-taught coder with an MBA from Carlson School of Business and 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
 <p>I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app — because when technology meets empathy & care, beautiful things happen.</p>
 <p>Through my <b>AI Literacy Workshops</b> and consulting work, I believe AI should be your helpful assistant. Through <b>SpurSpark</b>, I provide consulting in tech strategy, product vision, AI solutions, data analysis & research, and authentic branding.</p>
-<p>My mission is not only to build meaningful solutions today but also to <b>educate and empower the next generation</b> how to thrive in the AI era with curiosity, compassion, and confidence.
-<p>Beyond tech, I’m also an <b>ACE Certified Group Fitness Instructor</>, because I believe wellness—of body and mind—is at the heart of innovation and leadership</p>
+<p>My mission is not only to build meaningful solutions today but also to <b>educate and empower the next generation</b> how to thrive in the AI era with curiosity, compassion, and confidence.</p>
+<p>Beyond tech, I’m also an <b>ACE Certified Group Fitness Instructor</b>, because I believe wellness—of body and mind—is at the heart of innovation and leadership</p>
 <p>Curiosity drives me, compassion guides me, and real connection motivates everything I do. When we work together, you're getting someone who genuinely cares about your success and will show up with a smile, a plan, a purpose and the data to prove it works.</p>
  
 <p><i><b>Ready to build something meaningful together?</b></i></p>
