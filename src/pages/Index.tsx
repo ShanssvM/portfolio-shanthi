@@ -18,8 +18,8 @@ const Index = () => {
           color: "text-purple-500 hover:text-purple-600"
         },
         {
-          title: "Vedic Math (in progress)",
-          url: "underconstruction",
+          title: "Vedic Math",
+          url: "https://vedic-math-app.onrender.com",
           color: "text-purple-500 hover:text-purple-600"
         }
       ]
