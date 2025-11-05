@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { ExternalLink, Users } from 'lucide-react';
+import React from "react";
+import { ExternalLink, Users } from "lucide-react";
 
 const Index = () => {
   const projectCategories = [
@@ -10,34 +9,34 @@ const Index = () => {
         {
           title: "NeuroBlossom",
           url: "https://neuro-blossom.netlify.app/",
-          color: "text-purple-500 hover:text-purple-600"
+          color: "text-purple-500 hover:text-purple-600",
         },
         {
           title: "Wellness Journal",
           url: "https://app--snap-bites-daae07e4.base44.app",
-          color: "text-purple-500 hover:text-purple-600"
+          color: "text-purple-500 hover:text-purple-600",
         },
         {
           title: "Vedic Math",
           url: "https://vedic-math-app.onrender.com",
-          color: "text-purple-500 hover:text-purple-600"
-        }
-      ]
+          color: "text-purple-500 hover:text-purple-600",
+        },
+      ],
     },
     {
       category: "AI",
       projects: [
         {
           title: "Responsible AI with ShanthiSSVM",
-          url: "https://shanssvm.github.io/ai-with-shanthi/", 
-          color: "text-blue-500 hover:text-blue-600"
+          url: "https://shanssvm.github.io/ai-with-shanthi/",
+          color: "text-blue-500 hover:text-blue-600",
         },
         {
-          title: "AI Career Tool", 
+          title: "AI Career Tool",
           url: "https://shanssvm.github.io/job-network-viz",
-          color: "text-blue-500 hover:text-blue-600"
-        }
-      ]
+          color: "text-blue-500 hover:text-blue-600",
+        },
+      ],
     },
     {
       category: "Health is Wealth",
@@ -45,61 +44,58 @@ const Index = () => {
         {
           title: "Nourish Stay Fit 4 Life",
           url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/recipes-1",
-          color: "text-green-500 hover:text-green-600"
+          color: "text-green-500 hover:text-green-600",
         },
         {
           title: "Blog",
           url: "https://stayinspiredsssv.wixsite.com/nourishstayfit4life/blog",
-          color: "text-green-500 hover:text-green-600"
-        }
-      ]
+          color: "text-green-500 hover:text-green-600",
+        },
+      ],
     },
     {
       category: "Consulting",
       projects: [
         {
           title: "SpurSpark",
-          url: "https://sites.google.com/view/spur-spark/home", 
-          color: "text-orange-500 hover:text-orange-600"
-        }
-      ]
-    }
+          url: "https://sites.google.com/view/spur-spark/home",
+          color: "text-orange-500 hover:text-orange-600",
+        },
+      ],
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 py-2 max-w-6xl h-screen flex flex-col">
-        
-         {/* Header Section with Title and Image */}
+        {/* Header Section with Title and Image */}
         <div className="flex items-center gap-4 mb-2">
           <div className="flex-1">
             <h1 className="text-2xl font-bold text-gray-800">Shanthi SSVM</h1>
           </div>
-          <a 
-            href=" https://shanthimari.wixsite.com/cv-pm" 
-            target="_blank" 
+          <a
+            href=" https://shanthimari.wixsite.com/cv-pm"
+            target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity text-sm"
-          ><b>Resume</b></a>
+          >
+            <b>Resume</b>
+          </a>
           <div className="flex-shrink-0">
-            <img 
-              src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png" 
+            <img
+              src="/lovable-uploads/e8fc0778-9538-4751-86ed-8324167eb959.png"
               alt="Shanthi SSVM"
               className="w-12 h-12 rounded-full object-cover border-2 border-gray-300 shadow-lg"
-              style={{ objectPosition: 'center top' }}
+              style={{ objectPosition: "center top" }}
             />
           </div>
-          <a 
-            href="https://www.linkedin.com/in/helloshanthissv/" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/helloshanthissv/"
+            target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img 
-              src="/lovable-uploads/f27d6b5c-2df9-4583-bbca-9966ae5c253a.png" 
-              alt="LinkedIn" 
-              className="w-6 h-6"
-            />
+            <img src="/lovable-uploads/f27d6b5c-2df9-4583-bbca-9966ae5c253a.png" alt="LinkedIn" className="w-6 h-6" />
           </a>
         </div>
 
@@ -108,19 +104,52 @@ const Index = () => {
           {/* Left Side - Bio */}
           <div className="flex-1">
             <p className="text-sm text-gray-600 leading-relaxed space-y-2">
-            <p> <b> A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat 
-              staring at her computer, genuinely puzzled by something we 
-              all do dozens of times a day — "What happens when I 
-              click send on an email?"</b></p>
-              
-<p>That curiosity transformed me into a self-taught coder with an MBA from Carlson School of Business and 18+ years of helping organizations build technology that actually serves people. I believe the best digital solutions happen when we blend tech with genuine care—and let the data tell the story.</p>
-<p>I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app — because when technology meets empathy & care, beautiful things happen.</p>
-<p>Through my <b>AI Literacy Workshops</b> and consulting work, I believe AI should be your helpful assistant. Through <b>SpurSpark</b>, I provide consulting in tech strategy, product vision, AI solutions, data analysis & research, and authentic branding.</p>
-<p>My mission is to build meaningful solutions today but also to <b>educate and empower the next generation</b> how to thrive in the AI era with curiosity, compassion, and confidence.</p>
-<p>Beyond tech, I'm a <b>Certified 200-Hour Yoga Teacher</b> and an <b>ACE Certified Group Fitness Instructor</b>, because I believe wellness—of body and mind—is at the heart of innovation and leadership</p>
-<p>Curiosity drives me, compassion guides me, and real connection motivates everything I do. When we work together, you're getting someone who genuinely cares about your success and will show up with a smile, a plan, a purpose and the data to prove it works.</p>
- 
-<p><i><b>Ready to build something meaningful together?</b></i></p>
+              <p>
+                {" "}
+                <b>
+                  {" "}
+                  A math-loving <i>(Masters in Mathematics)</i>, data-curious young girl once sat staring at her
+                  computer, genuinely puzzled by something we all do dozens of times a day — "What happens when I click
+                  send on an email?"
+                </b>
+              </p>
+
+              <p>
+                That curiosity transformed me into a self-taught coder with an MBA from Carlson School of Business and
+                18+ years of helping organizations build technology that actually serves people. I believe the best
+                digital solutions happen when we blend tech with genuine care—and let the data tell the story.
+              </p>
+              <p>
+                I founded <b>NourishStayFit4Life</b> (inspired by my grandmothers' wisdom that "health is wealth") and
+                created <b>NeuroBlossom</b>, an AI-powered Alzheimer's support app — because when technology meets
+                empathy & care, beautiful things happen.
+              </p>
+              <p>
+                Through my <b>AI Literacy Workshops</b> and consulting work, I believe AI should be your helpful
+                assistant. Through <b>SpurSpark</b>, I provide consulting in tech strategy, product vision, AI
+                solutions, data analysis & research, and authentic branding.
+              </p>
+              <p>
+                My mission is not only to build meaningful solutions today but also to{" "}
+                <b>educate and empower the next generation</b> how to thrive in the AI era with curiosity, compassion,
+                and confidence.
+              </p>
+              <p>
+                Beyond tech, I'm a <b>Certified 200-Hour Yoga Teacher</b> and an{" "}
+                <b>ACE Certified Group Fitness Instructor</b>, because I believe wellness—of body and mind—is at the
+                heart of innovation and leadership
+              </p>
+              <p>
+                Curiosity drives me, compassion guides me, and real connection motivates everything I do. When we work
+                together, you're getting someone who genuinely cares about your success and will show up with a smile, a
+                plan, a purpose and the data to prove it works.
+              </p>
+
+              <p>
+                <i>
+                  <b>Ready to build something meaningful together?</b>
+                </i>
+              </p>
             </p>
           </div>
 
@@ -130,7 +159,7 @@ const Index = () => {
               <Users className="w-4 h-4 text-blue-500" />
               <h2 className="text-lg font-bold text-gray-800">Creative Highlights</h2>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-3 divide-x divide-gray-200">
               {/* Left column - Apps & AI */}
               <div className="space-y-3">
@@ -160,7 +189,7 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              
+
               {/* Right column - Health & Consulting */}
               <div className="space-y-3 pl-3">
                 {projectCategories.slice(2, 4).map((category, categoryIndex) => (
