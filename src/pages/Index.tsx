@@ -1,5 +1,6 @@
 import React from "react";
 import { ExternalLink, Users } from "lucide-react";
+import { FloatingChatButton } from "@/components/chat/FloatingChatButton";
 
 const Index = () => {
   const projectCategories = [
@@ -222,6 +223,7 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <FloatingChatButton />
     </div>
   );
 };
