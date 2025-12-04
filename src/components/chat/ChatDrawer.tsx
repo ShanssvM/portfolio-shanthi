@@ -182,7 +182,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent className="w-full sm:max-w-lg flex flex-col p-0">
+      <SheetContent className="w-80 sm:w-96 flex flex-col p-0">
         <SheetHeader className="p-4 border-b">
           <div className="flex items-center justify-between">
             <SheetTitle>Document Q&A</SheetTitle>
