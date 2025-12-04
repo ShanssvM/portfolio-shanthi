@@ -33,8 +33,9 @@ interface ChatDrawerProps {
 export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
   const { user, isAdmin, signOut } = useAuth();
   const [documents, setDocuments] = useState<Document[]>([]);
-  const [selectedDoc, setSelectedDoc] = useState<Document | null>(null);
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([
+    { role: 'assistant', content: 'Hi! Ask me anything about the documents.' }
+  ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
@@ -130,10 +131,6 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
       await supabase.from('documents').delete().eq('id', doc.id);
       
       toast({ title: 'Deleted', description: 'Document removed successfully' });
-      if (selectedDoc?.id === doc.id) {
-        setSelectedDoc(null);
-        setMessages([]);
-      }
       fetchDocuments();
     } catch (error) {
       console.error('Delete error:', error);
@@ -142,7 +139,18 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
   };
 
   const handleSendMessage = async () => {
-    if (!inputValue.trim() || !selectedDoc?.content) return;
+    if (!inputValue.trim()) return;
+
+    // Combine all document content
+    const allContent = documents
+      .filter(doc => doc.content)
+      .map(doc => `[${doc.name}]\n${doc.content}`)
+      .join('\n\n---\n\n');
+
+    if (!allContent) {
+      toast({ title: 'No documents', description: 'No documents available to query', variant: 'destructive' });
+      return;
+    }
 
     const userMessage: Message = { role: 'user', content: inputValue };
     setMessages(prev => [...prev, userMessage]);
@@ -153,8 +161,8 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
       const { data, error } = await supabase.functions.invoke('document-chat', {
         body: {
           question: inputValue,
-          documentContent: selectedDoc.content,
-          documentName: selectedDoc.name,
+          documentContent: allContent,
+          documentName: documents.map(d => d.name).join(', '),
         },
       });
 
@@ -170,11 +178,6 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
     } finally {
       setIsLoading(false);
     }
-  };
-
-  const handleSelectDocument = (doc: Document) => {
-    setSelectedDoc(doc);
-    setMessages([{ role: 'assistant', content: `I'm ready to answer questions about "${doc.name}". What would you like to know?` }]);
   };
 
   return (
@@ -205,55 +208,41 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
           </TabsList>
 
           <TabsContent value="chat" className="flex-1 flex flex-col overflow-hidden m-0 p-4">
-            {!selectedDoc ? (
-              <div className="flex-1 flex items-center justify-center text-muted-foreground text-center p-4">
-                <div>
-                  <FileText className="h-12 w-12 mx-auto mb-4 opacity-50" />
-                  <p>Select a document from the Documents tab to start chatting</p>
-                </div>
-              </div>
-            ) : (
-              <>
-                <div className="mb-2 p-2 bg-muted rounded-md text-sm">
-                  <span className="font-medium">Chatting about:</span> {selectedDoc.name}
-                </div>
-                <ScrollArea className="flex-1 pr-4">
-                  <div className="space-y-4">
-                    {messages.map((msg, idx) => (
-                      <div
-                        key={idx}
-                        className={`p-3 rounded-lg ${
-                          msg.role === 'user'
-                            ? 'bg-primary text-primary-foreground ml-8'
-                            : 'bg-muted mr-8'
-                        }`}
-                      >
-                        {msg.content}
-                      </div>
-                    ))}
-                    {isLoading && (
-                      <div className="bg-muted mr-8 p-3 rounded-lg flex items-center gap-2">
-                        <Loader2 className="h-4 w-4 animate-spin" />
-                        Thinking...
-                      </div>
-                    )}
-                    <div ref={messagesEndRef} />
+            <ScrollArea className="flex-1 pr-4">
+              <div className="space-y-4">
+                {messages.map((msg, idx) => (
+                  <div
+                    key={idx}
+                    className={`p-3 rounded-lg ${
+                      msg.role === 'user'
+                        ? 'bg-primary text-primary-foreground ml-8'
+                        : 'bg-muted mr-8'
+                    }`}
+                  >
+                    {msg.content}
                   </div>
-                </ScrollArea>
-                <div className="flex gap-2 mt-4">
-                  <Input
-                    placeholder="Ask a question..."
-                    value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
-                    onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && handleSendMessage()}
-                    disabled={isLoading}
-                  />
-                  <Button onClick={handleSendMessage} disabled={isLoading || !inputValue.trim()}>
-                    <Send className="h-4 w-4" />
-                  </Button>
-                </div>
-              </>
-            )}
+                ))}
+                {isLoading && (
+                  <div className="bg-muted mr-8 p-3 rounded-lg flex items-center gap-2">
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Thinking...
+                  </div>
+                )}
+                <div ref={messagesEndRef} />
+              </div>
+            </ScrollArea>
+            <div className="flex gap-2 mt-4">
+              <Input
+                placeholder="Ask a question..."
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && handleSendMessage()}
+                disabled={isLoading}
+              />
+              <Button onClick={handleSendMessage} disabled={isLoading || !inputValue.trim()}>
+                <Send className="h-4 w-4" />
+              </Button>
+            </div>
           </TabsContent>
 
           <TabsContent value="documents" className="flex-1 flex flex-col overflow-hidden m-0 p-4">
@@ -293,10 +282,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
                   {documents.map((doc) => (
                     <div
                       key={doc.id}
-                      className={`p-3 rounded-lg border cursor-pointer hover:bg-accent transition-colors ${
-                        selectedDoc?.id === doc.id ? 'bg-accent border-primary' : ''
-                      }`}
-                      onClick={() => handleSelectDocument(doc)}
+                      className="p-3 rounded-lg border"
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2 min-w-0">
