@@ -44,7 +44,7 @@ serve(async (req) => {
 
       console.log('Sending PDF to Lovable AI for text extraction...');
       
-      const response = await fetch('https://ai.lovable.dev/api/v2/chat/completions', {
+      const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${apiKey}`,
@@ -94,7 +94,7 @@ serve(async (req) => {
 
       console.log('Sending DOCX to Lovable AI for text extraction...');
       
-      const response = await fetch('https://ai.lovable.dev/api/v2/chat/completions', {
+      const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${apiKey}`,
