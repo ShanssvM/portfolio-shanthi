@@ -87,12 +87,23 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
     setIsUploading(true);
 
     try {
-      // Read file content for text files
-      let content = '';
-      if (file.type === 'text/plain' || extension === '.txt') {
-        content = await file.text();
-      } else {
-        content = `[Binary file: ${file.name}] - Content extraction not available for this file type in demo.`;
+      // Extract content using the parse-document edge function
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const { data: parseData, error: parseError } = await supabase.functions.invoke('parse-document', {
+        body: formData,
+      });
+
+      if (parseError) {
+        console.error('Parse error:', parseError);
+        throw new Error('Failed to extract document content');
+      }
+
+      const content = parseData?.content || '';
+      
+      if (!content) {
+        throw new Error('No content could be extracted from the document');
       }
 
       const fileName = `${Date.now()}-${file.name}`;
@@ -114,11 +125,11 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
 
       if (dbError) throw dbError;
 
-      toast({ title: 'Success', description: 'Document uploaded successfully' });
+      toast({ title: 'Success', description: 'Document uploaded and parsed successfully' });
       fetchDocuments();
-    } catch (error) {
+    } catch (error: any) {
       console.error('Upload error:', error);
-      toast({ title: 'Error', description: 'Failed to upload document', variant: 'destructive' });
+      toast({ title: 'Error', description: error.message || 'Failed to upload document', variant: 'destructive' });
     } finally {
       setIsUploading(false);
       if (fileInputRef.current) fileInputRef.current.value = '';
