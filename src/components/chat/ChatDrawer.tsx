@@ -193,7 +193,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent className="w-[90vw] sm:w-[420px] md:w-[480px] h-[70vh] max-h-[600px] top-auto bottom-4 right-4 rounded-lg flex flex-col p-0 shadow-xl bg-background text-foreground" overlayClassName="bg-transparent">
+      <SheetContent className="w-[95vw] sm:w-[500px] md:w-[560px] h-[80vh] max-h-[700px] top-auto bottom-4 right-4 rounded-lg flex flex-col p-0 shadow-xl bg-background text-foreground" overlayClassName="bg-transparent">
         <SheetHeader className="p-4 border-b">
           <div className="flex items-center justify-between">
             <SheetTitle>Document Q&A</SheetTitle>
