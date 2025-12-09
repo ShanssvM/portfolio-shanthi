@@ -227,14 +227,14 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
                     className={`p-3 rounded-lg ${
                       msg.role === 'user'
                         ? 'bg-primary text-primary-foreground ml-8'
-                        : 'bg-muted mr-8'
+                        : 'bg-muted text-muted-foreground mr-8'
                     }`}
                   >
                     {msg.content}
                   </div>
                 ))}
                 {isLoading && (
-                  <div className="bg-muted mr-8 p-3 rounded-lg flex items-center gap-2">
+                  <div className="bg-muted text-muted-foreground mr-8 p-3 rounded-lg flex items-center gap-2">
                     <Loader2 className="h-4 w-4 animate-spin" />
                     Thinking...
                   </div>
