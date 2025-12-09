@@ -242,7 +242,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
                 <div ref={messagesEndRef} />
               </div>
             </ScrollArea>
-            <div className="flex gap-2 mt-4">
+            <div className="flex gap-2 pt-3 border-t mt-auto">
               <Input
                 placeholder="Ask a question..."
                 value={inputValue}
