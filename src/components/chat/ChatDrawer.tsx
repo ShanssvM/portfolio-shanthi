@@ -215,7 +215,8 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
         <Tabs defaultValue="chat" className="flex-1 flex flex-col overflow-hidden">
           <TabsList className="mx-4 mt-2">
             <TabsTrigger value="chat" className="flex-1">Chat</TabsTrigger>
-            <TabsTrigger value="documents" className="flex-1">Documents</TabsTrigger>
+          /* <TabsTrigger value="documents" className="flex-1">
+              Documents</TabsTrigger> */
           </TabsList>
 
           <TabsContent value="chat" className="flex-1 flex flex-col overflow-hidden m-0 px-4 pt-4">
