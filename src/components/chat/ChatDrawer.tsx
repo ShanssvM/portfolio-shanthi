@@ -222,9 +222,10 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
             <TabsTrigger value="documents" className="flex-1">
               Documents
              </TabsTrigger> 
-          */}
+          
           </TabsList>
-
+          */}
+          
           <TabsContent value="chat" className="flex-1 flex flex-col overflow-hidden m-0 px-4 pt-4">
             <ScrollArea className="flex-1 pr-4">
               <div className="space-y-4">
