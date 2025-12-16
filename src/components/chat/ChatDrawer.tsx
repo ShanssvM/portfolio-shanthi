@@ -34,7 +34,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
   const { user, isAdmin, signOut } = useAuth();
   const [documents, setDocuments] = useState<Document[]>([]);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: 'Hi! Ask me about Shanthi and her work.' }
+    { role: 'assistant', content: 'Hi! Ask me about Shanthi SSVM, her Career and AI Products.' }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
