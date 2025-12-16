@@ -197,6 +197,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
         <SheetHeader className="p-4 border-b">
           <div className="flex items-center justify-between">
             <SheetTitle>Document Q&A</SheetTitle>
+            {/* 
             {user ? (
               <Button variant="ghost" size="sm" onClick={() => signOut()}>
                 Sign Out
@@ -209,6 +210,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
                 </Link>
               </Button>
             )}
+            */}
           </div>
         </SheetHeader>
 
