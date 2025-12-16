@@ -196,7 +196,7 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
       <SheetContent className="w-[95vw] sm:w-[500px] md:w-[560px] h-[80vh] max-h-[700px] top-auto bottom-4 right-4 rounded-lg flex flex-col p-0 shadow-xl bg-background text-foreground" overlayClassName="bg-transparent">
         <SheetHeader className="p-4 border-b">
           <div className="flex items-center justify-between">
-            <SheetTitle>Document Q&A</SheetTitle>
+            <SheetTitle>Chat with me</SheetTitle>
             {/* 
             {user ? (
               <Button variant="ghost" size="sm" onClick={() => signOut()}>
@@ -215,9 +215,10 @@ export function ChatDrawer({ open, onOpenChange }: ChatDrawerProps) {
         </SheetHeader>
 
         <Tabs defaultValue="chat" className="flex-1 flex flex-col overflow-hidden">
+         {/*
           <TabsList className="mx-4 mt-2">
             <TabsTrigger value="chat" className="flex-1">Chat</TabsTrigger>
-            {/*
+          
             <TabsTrigger value="documents" className="flex-1">
               Documents
              </TabsTrigger> 
