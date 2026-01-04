@@ -75,7 +75,7 @@ const Index = () => {
       ],
     },
   ];
-
+}
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 py-2 max-w-6xl h-screen flex flex-col">
