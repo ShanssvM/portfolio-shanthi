@@ -62,11 +62,6 @@ const Index = () => {
           url: "https://sites.google.com/view/spur-spark/home",
           color: "text-orange-500 hover:text-orange-600",
         },
-      ],
-    },
-    {
-      category: "Non-profit",
-      projects: [
         {
           title: "Non-profit Impact OS",
           url: "https://gemini.google.com/share/4a8e6127b4d2",
@@ -75,7 +70,7 @@ const Index = () => {
       ],
     },
   ];
-}
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white overflow-hidden">
       <div className="container mx-auto px-4 py-2 max-w-6xl h-screen flex flex-col">
