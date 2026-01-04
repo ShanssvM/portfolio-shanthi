@@ -64,6 +64,16 @@ const Index = () => {
         },
       ],
     },
+    {
+      category: "Non-profit",
+      projects: [
+        {
+          title: "Non-profit Impact OS",
+          url: "https://gemini.google.com/share/4a8e6127b4d2",
+          color: "text-orange-500 hover:text-orange-600",
+        },
+      ],
+    },
   ];
 
   return (
